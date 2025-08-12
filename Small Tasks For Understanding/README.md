@@ -16,3 +16,9 @@ else
     echo "" > auth.log
     echo "Var log alert has been archived"
 fi
+
+##
+Command to get the output of df -h in CSV format
+'''bash
+df -h | awk '{print $1,$2,$3,$4,$5,$6}' | tr ' ' ',' | awk '{print NR ","$0}'
+
