@@ -55,19 +55,20 @@ echo $? #It will check whether the previous command was run or not and give us z
 1+=error
 
 ##Operators
-== OR -eq *comparsion operator*
-!= *not equal to*
-> *greater than*
-< *Less than*
--gt *greater than*
--ge *greater than or equal to*
--lt *less than*
--le *less than or equal to*
-&& *and*
-|| *OR*
+1) == OR -eq *comparsion operator*
+2) != *not equal to*
+3) > *greater than*
+4) < *Less than*
+5) -gt *greater than*
+6) -ge *greater than or equal to*
+7) -lt *less than*
+8) -le *less than or equal to*
+9) && *and*
+10) || *OR*
 
 
 IF STATEMENT
+
 syntax:
 if ( condition )
 then
@@ -131,6 +132,16 @@ To check wheather a file or folder exists or has executable permnissions
 if [[ -x filename ]]
 if [[ -f directory name ]]
 
+
+WHILE STATEMENT
+
+Infinity loop
+Syntax:
+while condition
+do 
+  echo "statement"
+
+#interview question: How to read a file using bash scripting ( line by line )
 
 
 
