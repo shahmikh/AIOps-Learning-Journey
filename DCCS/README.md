@@ -25,7 +25,7 @@ Here are steps for bash scripting
  - For bash : #!/bin/bash
  - For Python: #!/use/bin/pyhton3
 
-tr command ( use in file system )
+# tr command ( use in file system )
 syntax: tr <find> <replace>
 example: tr [a-z] [A-Z]
 
