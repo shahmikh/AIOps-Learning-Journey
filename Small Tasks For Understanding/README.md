@@ -1,6 +1,6 @@
 ## 2025-08-12
 
-Below is the bash script that will check disk space, and if it’s full, it will automatically create a compressed zip file and empty the original log file.
+## Below is the bash script that will check disk space, and if it’s full, it will automatically create a compressed zip file and empty the original log file.
 
 ```bash
 #!/bin/bash
