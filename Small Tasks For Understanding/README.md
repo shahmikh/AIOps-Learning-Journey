@@ -18,13 +18,14 @@ else
 fi
 ---
 
-##
-Command to get the output of df -h in CSV format
+## Command to get the output of df -h in CSV format
 '''bash
 df -h | awk '{print $1,$2,$3,$4,$5,$6}' | tr ' ' ',' | awk '{print NR ","$0}'
 
-2025-08-13
-Bash Script: Password Strength Checker
+---
+
+## 2025-08-13
+## Bash Script: Password Strength Checker
 
 ```bash
 #!/bin/bash
@@ -58,3 +59,5 @@ if [[ $length -ge 8 ]]; then
 else
     echo "⚠️ Length is too small - minimum 8 characters"
 fi
+
+---
