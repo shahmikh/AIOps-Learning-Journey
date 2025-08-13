@@ -24,6 +24,7 @@ df -h | awk '{print $1,$2,$3,$4,$5,$6}' | tr ' ' ',' | awk '{print NR ","$0}'
 
 ## 2025-08-13
 
+```bash
 #!/bin/bash
 
 # Prompt user for password
