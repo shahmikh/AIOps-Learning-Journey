@@ -22,3 +22,41 @@ Command to get the output of df -h in CSV format
 '''bash
 df -h | awk '{print $1,$2,$3,$4,$5,$6}' | tr ' ' ',' | awk '{print NR ","$0}'
 
+## 2025-08-13
+
+## Password manager
+
+```bash
+#!/bin/bash
+
+echo "Enter your password: "
+read password
+length="${#password}"
+
+if [[ $length -ge 8 ]]
+then
+        echo "$password" | grep -q [0-9]
+        if [[ $? -eq 0 ]]
+        then
+
+                echo "$password" | grep -q [A-Z]
+                if [[ $? -eq 0 ]]
+                then
+
+                        echo "$password" | grep -q [a-z]
+                        if [[ $? -eq 0 ]]
+                        then
+                                echo "strong password"
+                        else
+                                echo "WEAK PASSWORD-should contain a lower case letter"
+                        fi
+                else
+                        echo "WEAK PASSWORD-should contain an upper case letter"
+                fi
+        else
+                echo "WEAK PASSWORD-should contain a number"
+        fi
+else
+        echo "Length is too small-minimum 8 length"
+fi
+
