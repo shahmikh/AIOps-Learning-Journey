@@ -46,18 +46,18 @@ if [[ $length -ge 8 ]]; then
 
             # Check for at least one lowercase letter
             if echo "$password" | grep -q '[a-z]'; then
-                echo "✅ Strong password"
+                echo "Strong password"
             else
-                echo "⚠️ WEAK PASSWORD - should contain a lowercase letter"
+                echo "WEAK PASSWORD - should contain a lowercase letter"
             fi
         else
-            echo "⚠️ WEAK PASSWORD - should contain an uppercase letter"
+            echo "WEAK PASSWORD - should contain an uppercase letter"
         fi
     else
-        echo "⚠️ WEAK PASSWORD - should contain a number"
+        echo "WEAK PASSWORD - should contain a number"
     fi
 else
-    echo "⚠️ Length is too small - minimum 8 characters"
+    echo "Length is too small - minimum 8 characters"
 fi
 
 ---
