@@ -5,7 +5,7 @@ This folder contains my notes, commands, and mini-projects related to cloud secu
 Courses:
 
 - Linux Deep Dive
-- RHEL for newbies SysOps
+- RHEL Intensive: SysOps
 - Python Deep Dive
 - Certified Information System Security Professional
 - Cyber Security Essentials Revisit
