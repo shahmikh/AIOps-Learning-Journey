@@ -1,0 +1,7 @@
+#!/bin/bash
+
+for n in {1..10}
+do
+        data=$(cat /etc/passwd > file$n)
+        echo "file$n is written"        
+done
