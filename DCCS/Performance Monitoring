@@ -1,0 +1,11 @@
+Linux Performance & System Monitoring
+
+Here are my important notes:
+
+1) fsck & badblocks: Check and repair filesystem errors. Remember: cannot check a mounted system — need to unmount or boot into recovery mode for “/”.
+
+2) Processes & Daemons: Learned about system vs application daemons, fork bombs, PID 0, and how killing system daemons can crash your system.
+
+3) Process monitoring: Using top and htop to track CPU, memory, and load (processes waiting in queue). Pro tip: use top -n1 > file.txt to save snapshots, as top refreshes continuously.
+
+4) Buffers & Cache: Key memory concepts impacting system performance.
