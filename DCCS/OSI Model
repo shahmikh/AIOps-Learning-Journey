@@ -8,3 +8,4 @@ This is the OSI model, a 7-layer framework that explains how data travels from o
 2 | Data Link    | Ensures data reaches correct device locally (MAC)
 1 | Physical     | Actual cables, signals, and hardware
 
+![OSI Model](./OSI Model.jpeg)
