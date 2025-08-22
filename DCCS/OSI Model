@@ -1,0 +1,10 @@
+This is the OSI model, a 7-layer framework that explains how data travels from one computer to another over a network.
+
+7 | Application   | User programs like web browser, email
+6 | Presentation   | Data translation, encryption, compression
+5 | Session     | Starts/ends connections between computers
+4 | Transport    | Ensures data is delivered correctly (TCP/UDP)
+3 | Network     | Decides the path for data (IP addresses, routing)
+2 | Data Link    | Ensures data reaches correct device locally (MAC)
+1 | Physical     | Actual cables, signals, and hardware
+
